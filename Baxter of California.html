@@ -96,12 +96,32 @@
 		<section class="modal modal-login">
   		<h2>Личный кабинет</h2>
   		<p>Введите свой логин и пароль</p>
-  		<!-- Место для формы-->
-  		<span class=modal-close"">x</span>
+  		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input type="text" class="user-icon-login" id="user-login" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input type="password" class="user-icon-password" id="user-password" name="password" placeholder="Пароль">
+        </p>
+        <p>
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember">
+            Запомните меня
+          </label> 
+          <a href="#" class="restore">Я забыл пароль!</a> 
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+  		<button class="modal-close" type="button">Закрыть</button>
   	</section>
   	<section class="modal modal-map">
   		<h2 class="visually-hidden">Как добраться</h2>
-  		<span class=modal-close"">x</span>
+      <p>
+        <img src="img/big-map.jpg" width="766" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+  		<button class="modal-close" type="button">Закрыть</button>
   	</section>
 	</body>
 </html>	
